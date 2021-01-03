@@ -1,16 +1,29 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card {
+  /* border-radius: 50px;
+  background: #a591ee;
+  box-shadow: 20px 20px 60px #8c7bca, -20px -20px 60px #bea7ff; */
+
+  /* background: #3b82f6;
+  opacity: 0.5;
+  box-shadow: 20px 20px 60px #8c7bca, -20px -20px 60px #bea7ff;
+  border-radius: 20px;
+  padding: 4px 30px 20px;
+  min-height: 100px; */
+
+  @apply shadow-lg;
+  @apply p-4;
+  @apply mt-4;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.card-title {
+  @apply text-lg;
+  @apply underline;
 }
 
-* {
-  box-sizing: border-box;
+canvas {
+  background-color: black;
 }
