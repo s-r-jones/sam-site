@@ -18,8 +18,13 @@ var MOUSE_INFLUENCE = 4,
   GRAVITY_X = 0,
   GRAVITY_Y = 0,
   MOUSE_REPEL = false,
-  GROUPS = [90, 80, 50, 50, 50],
-  GROUP_COLOURS = ["rgba(120,50,230"];
+  GROUPS = [70, 80, 50, 50, 50, 65, 25, 15],
+  GROUP_COLOURS = [
+    "rgba(120,50,230",
+    "rgba(250,100,200",
+    "rgba(120,250,230",
+    "rgba(120,250,200",
+  ];
 
 window.requestAnimFrame =
   window.requestAnimationFrame ||
@@ -146,6 +151,7 @@ var fluid = (function () {
       cell_y = Math.round(this.y / spacing),
       close = [];
 
+    // get the closest
     for (var x_off = -1; x_off < 2; x_off++) {
       for (var y_off = -1; y_off < 2; y_off++) {
         var cell = grid[(cell_y + y_off) * num_x + (cell_x + x_off)];
@@ -173,6 +179,7 @@ var fluid = (function () {
 
     force = (force - 3) * 0.5;
 
+    // fluid stuffxs
     for (var i = 0, l = close.length; i < l; i++) {
       var neighbor = close[i];
 
@@ -272,7 +279,24 @@ var fluid = (function () {
         return false;
       };
 
+      canvas.onpointerdown = function (e) {
+        mouse.down = true;
+        return false;
+      };
+
+      canvas.onpointerup = function (e) {
+        mouse.down = false;
+        return false;
+      };
+
       canvas.onmousemove = function (e) {
+        var rect = canvas.getBoundingClientRect();
+        mouse.x = e.clientX - rect.left;
+        mouse.y = e.clientY - rect.top;
+        return false;
+      };
+
+      canvas.onpointermove = function (e) {
         var rect = canvas.getBoundingClientRect();
         mouse.x = e.clientX - rect.left;
         mouse.y = e.clientY - rect.top;
