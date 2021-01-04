@@ -44,3 +44,11 @@ canvas {
   @apply w-screen h-screen;
   @apply flex justify-center;
 }
+
+.slick-next {
+  right: -15px !important;
+}
+
+.slick-prev {
+  left: -15px !important;
+}

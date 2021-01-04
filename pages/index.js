@@ -20,13 +20,13 @@ export default function Home() {
         px-4 md:px-10 py-2
         bg-green-200"
       >
-        <div onClick={() => setActiveTab(null)}>About</div>
+        <div onClick={() => setActiveTab(2)}>About</div>
 
         <div onClick={() => setActiveTab(0)}>Augmented Reality</div>
 
         <div onClick={() => setActiveTab(1)}>Web Apps</div>
 
-        <div onClick={() => setActiveTab(null)}>Contact</div>
+        {/* <div onClick={() => setActiveTab(null)}>Contact</div> */}
       </div>
       {activeTab !== null && (
         <div
@@ -39,8 +39,38 @@ export default function Home() {
 
       {activeTab !== null && (
         <div className="content-container">
+          {activeTab === 2 && (
+            <div className="card bg-green-200">
+              <h3 className="card-title font-extrabold">About</h3>
+              <div className="card-description">
+                Hi welcome to my internet space. I am a software engineer and
+                creative coder. I currently work at MeowWolf as an App and XR
+                developer where I transforms massive ideas into code; and code
+                into fun, unexpected and immersive experiences. My social AR
+                filters have gained more than 20 million views. I previously
+                worked as a consulting engineer for startups. In my life before
+                software I worked in advertising. Lets make something fun!
+              </div>
+              <div className="card-images max-w-sm mx-auto">
+                <Slider
+                  settings={{
+                    dots: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                  }}
+                >
+                  <Image src="/mw-home.png" width="350" height="200" />
+                  <Image src="/mw-watch.png" width="350" height="200" />
+                  <Image src="/mw-about.png" width="350" height="200" />
+                </Slider>
+              </div>
+            </div>
+          )}
           {activeTab === 1 && (
             <div className="card-list">
+              <h3 className="ml-4 mt-2 underline text-lg font-extrabold">
+                Recent Web Apps
+              </h3>
               <div className="card">
                 <h3 className="card-title font-extrabold">
                   <a target="_blank" href="https://www.meowwolf.com">
@@ -75,11 +105,10 @@ export default function Home() {
                   </a>
                 </h3>
                 <div className="card-description">
-                  In 2019 my team at Meow Wolf created a custom timed ticketing
-                  application. Now guests can purchase tickets for specfic times
-                  throughout a day. Reduced time-to-purchase by 40seconds,
-                  increased conversions by 4 percent, and increased average
-                  purchase amount by 10%.
+                  Lead developer for Meow Wolfs slick ticketing app. Now guests
+                  can purchase tickets for specfic times throughout a day.
+                  Reduced time-to-purchase by 40seconds, increased conversions
+                  by 4 percent, and increased average purchase amount by 10%.
                   <div className="font-bold">Stack:</div>
                   <div>Next.js, Graphql, TypeScript, Google Cloud Engine</div>
                 </div>
@@ -193,6 +222,9 @@ export default function Home() {
 
           {activeTab === 0 && (
             <div className="card-list">
+              <h3 className="ml-4 mt-2 underline text-lg font-extrabold">
+                Recent AR
+              </h3>
               <div className="card">
                 <h3 className="card-title font-extrabold">
                   <a
