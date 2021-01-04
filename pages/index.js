@@ -8,11 +8,34 @@ import "slick-carousel/slick/slick-theme.css";
 import { useState } from "react";
 
 export default function Home() {
-  const [activeTab, setActiveTab] = useState(3);
+  const [activeTab, setActiveTab] = useState(null);
 
   return (
     <Fragment>
-      <div className="absolute top-0"></div>
+      <div
+        className="
+        absolute top-5
+        w-screen
+        flex flex-row justify-around
+        px-4 md:px-10 py-2
+        bg-green-200"
+      >
+        <div onClick={() => setActiveTab(null)}>About</div>
+
+        <div onClick={() => setActiveTab(0)}>Augmented Reality</div>
+
+        <div onClick={() => setActiveTab(1)}>Web Apps</div>
+
+        <div onClick={() => setActiveTab(null)}>Contact</div>
+      </div>
+      {activeTab !== null && (
+        <div
+          className="absolute top-2 right-2 text-black font-black z-10"
+          onClick={() => setActiveTab(null)}
+        >
+          Close X
+        </div>
+      )}
       {activeTab == 1 && (
         <div className="content-container">
           <div className="card">

@@ -27,3 +27,13 @@
 canvas {
   background-color: black;
 }
+
+.content-container {
+  @apply absolute;
+  @apply top-0;
+  @apply bg-green-100;
+  @apply overflow-y-auto;
+  @apply bg-gradient-to-r;
+  @apply from-green-400;
+  @apply to-blue-500;
+}
