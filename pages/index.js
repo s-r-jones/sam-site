@@ -113,7 +113,7 @@ export default function Home() {
                   <div>Next.js, Graphql, TypeScript, Google Cloud Engine</div>
                 </div>
                 <div className="card-images max-w-sm mx-auto">
-                  <Slider
+                  {/* <Slider
                     settings={{
                       dots: true,
                       slidesToShow: 1,
@@ -122,7 +122,7 @@ export default function Home() {
                   >
                     <Image src="/mw-cal1.png" width="350" height="200" />
                     <Image src="/mw-ticket.png" width="350" height="200" />
-                  </Slider>
+                  </Slider> */}
                 </div>
               </div>
 
