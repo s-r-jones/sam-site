@@ -19,6 +19,16 @@
   @apply mt-4;
 }
 
+.card-list {
+  @apply w-10/12 md:w-5/12;
+  @apply bg-green-100;
+  @apply overflow-y-auto;
+  @apply bg-gradient-to-r;
+  @apply from-green-400;
+  @apply to-blue-500;
+  @apply overflow-y-auto;
+}
+
 .card-title {
   @apply text-lg;
   @apply underline;
@@ -31,9 +41,6 @@ canvas {
 .content-container {
   @apply absolute;
   @apply top-0;
-  @apply bg-green-100;
-  @apply overflow-y-auto;
-  @apply bg-gradient-to-r;
-  @apply from-green-400;
-  @apply to-blue-500;
+  @apply w-screen h-screen;
+  @apply flex justify-center;
 }
