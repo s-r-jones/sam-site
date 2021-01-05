@@ -52,3 +52,15 @@ canvas {
 .slick-prev {
   left: -15px !important;
 }
+
+html {
+  overflow: hidden;
+  height: 100%;
+  position: fixed;
+}
+
+body {
+  overflow: auto;
+  height: 100%;
+  position: relative;
+}
