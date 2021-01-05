@@ -1,7 +1,7 @@
 import { Fragment } from "react";
-import Head from "next/head";
 import Image from "next/image";
 import Slider from "react-slick";
+import { useTimeout } from "react-use";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -9,7 +9,7 @@ import { useState } from "react";
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState(null);
-
+  const [isReady, cancel] = useTimeout(4000);
   return (
     <Fragment>
       <div
@@ -20,14 +20,39 @@ export default function Home() {
         px-4 md:px-10 py-2
         bg-green-200"
       >
-        <div onClick={() => setActiveTab(2)}>About</div>
+        <div
+          className="font-extrabold text-xl md:text-2xl"
+          onClick={() => setActiveTab(2)}
+        >
+          About
+        </div>
 
-        <div onClick={() => setActiveTab(0)}>Augmented Reality</div>
+        <div
+          className="font-extrabold text-xl md:text-2xl"
+          onClick={() => setActiveTab(0)}
+        >
+          AR
+        </div>
 
-        <div onClick={() => setActiveTab(1)}>Web Apps</div>
+        <div
+          className="font-extrabold text-xl md:text-2xl"
+          onClick={() => setActiveTab(1)}
+        >
+          Web
+        </div>
 
-        {/* <div onClick={() => setActiveTab(null)}>Contact</div> */}
+        <div
+          className="font-extrabold text-xl md:text-2xl"
+          onClick={() => setActiveTab(3)}
+        >
+          Contact
+        </div>
       </div>
+      {isReady() === false && (
+        <div className="text-gray-600 font-extrabold absolute top-40 left-40 text-4xl p-4 bg-gray-100 ">
+          Tap and Move to Play! :)
+        </div>
+      )}
       {activeTab !== null && (
         <div
           className="absolute top-2 right-4 md:right-96 bg-white text-black font-black p-2 z-10"
@@ -40,19 +65,21 @@ export default function Home() {
       {activeTab !== null && (
         <div className="content-container">
           {activeTab === 2 && (
-            <div className="card bg-green-200">
-              <h3 className="card-title font-extrabold">About</h3>
-              <div className="card-description">
-                Hi welcome to my internet space. I am a software engineer and
-                creative coder. I currently work at MeowWolf as an App and XR
-                developer where I transforms massive ideas into code; and code
-                into fun, unexpected and immersive experiences. My social AR
-                filters have gained more than 20 million views. I previously
-                worked as a consulting engineer for startups. In my life before
-                software I worked in advertising. Lets make something fun!
-              </div>
-              <div className="card-images max-w-sm mx-auto">
-                {/* <Slider
+            <div className="card-list">
+              <div className="card bg-green-200">
+                <h3 className="card-title font-extrabold">About</h3>
+                <div className="card-description">
+                  Hi welcome to my internet space. I am a software engineer and
+                  creative coder. I currently work at MeowWolf as an App and XR
+                  developer where I transforms massive ideas into code; and code
+                  into fun, unexpected and immersive experiences. My social AR
+                  filters have gained more than 20 million views. I previously
+                  worked as a consulting engineer for startups. In my life
+                  before software I worked in advertising. Lets make something
+                  fun!
+                </div>
+                <div className="card-images max-w-sm mx-auto">
+                  {/* <Slider
                   settings={{
                     dots: true,
                     slidesToShow: 1,
@@ -63,9 +90,24 @@ export default function Home() {
                   <Image src="/mw-watch.png" width="350" height="200" />
                   <Image src="/mw-about.png" width="350" height="200" />
                 </Slider> */}
+                </div>
               </div>
             </div>
           )}
+
+          {activeTab === 3 && (
+            <div className="card-list">
+              <div className="card bg-green-200">
+                <h3 className="card-title font-extrabold">Contact</h3>
+                <div className="card-description">
+                  Interested in making an AR Project or Web App?
+                  <div className="my-5">Email me @:</div>
+                  <div> B S A M J O N E S @ G M A I L.com</div>
+                </div>
+              </div>
+            </div>
+          )}
+
           {activeTab === 1 && (
             <div className="card-list">
               <h3 className="ml-4 mt-2 underline text-lg font-extrabold">
