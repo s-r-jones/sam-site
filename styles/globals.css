@@ -20,7 +20,7 @@
 }
 
 .card-list {
-  @apply w-10/12 md:w-5/12;
+  @apply w-11/12 md:w-5/12;
   @apply bg-green-100;
   @apply overflow-y-auto;
   @apply bg-gradient-to-r;
