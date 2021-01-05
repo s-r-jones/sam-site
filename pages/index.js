@@ -112,18 +112,7 @@ export default function Home() {
                   <div className="font-bold">Stack:</div>
                   <div>Next.js, Graphql, TypeScript, Google Cloud Engine</div>
                 </div>
-                <div className="card-images max-w-sm mx-auto">
-                  {/* <Slider
-                    settings={{
-                      dots: true,
-                      slidesToShow: 1,
-                      slidesToScroll: 1,
-                    }}
-                  >
-                    <Image src="/mw-cal1.png" width="350" height="200" />
-                    <Image src="/mw-ticket.png" width="350" height="200" />
-                  </Slider> */}
-                </div>
+                <div className="card-images max-w-sm mx-auto"></div>
               </div>
 
               <div className="card">
