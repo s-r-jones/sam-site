@@ -283,9 +283,10 @@ export default function Home() {
                 </div>
                 <div className="card-images max-w-sm mx-auto">
                   <video
+                    preload="metadata"
                     src="jelly_demo.mov"
                     height="40"
-                    width="200"
+                    width="300"
                     controls
                   />
                 </div>
@@ -307,9 +308,10 @@ export default function Home() {
                 </div>
                 <div className="card-images max-w-sm mx-auto">
                   <video
+                    preload="metadata"
                     src="reflect_demo.mp4"
                     height="40"
-                    width="200"
+                    width="300"
                     controls
                   />
                 </div>
@@ -325,12 +327,18 @@ export default function Home() {
                   </a>
                 </h3>
                 <div className="card-description">
-                  Party likw its 1995 and someone stuck a magnet on your VCR.
+                  Party like its 1995 and someone stuck a magnet on your VCR.
                   This effect features a fuzzy and distorted fragment shader.
                   This effect has been viewed more than 400,000 times.
                 </div>
                 <div className="card-images max-w-sm mx-auto">
-                  <video src="vcr_demo.mov" height="40" width="200" controls />
+                  <video
+                    preload="metadata"
+                    src="vcr_demo.mov"
+                    height="40"
+                    width="300"
+                    controls
+                  />
                 </div>
               </div>
               {/* End */}
