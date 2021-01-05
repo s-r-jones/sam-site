@@ -71,7 +71,7 @@ export default function Home() {
                 <div className="card-description">
                   Hi welcome to my internet space. I am a software engineer and
                   creative coder. I currently work at MeowWolf as an App and XR
-                  developer where I transforms massive ideas into code; and code
+                  developer where I transform massive ideas into code; and code
                   into fun, unexpected and immersive experiences. My social AR
                   filters have gained more than 20 million views. I previously
                   worked as a consulting engineer for startups. In my life
