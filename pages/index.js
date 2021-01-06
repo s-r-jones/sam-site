@@ -265,7 +265,7 @@ export default function Home() {
           {activeTab === 0 && (
             <div className="card-list">
               <h3 className="ml-4 mt-2 underline text-lg font-extrabold">
-                Recent AR
+                Recent AR :)
               </h3>
               <div className="card">
                 <h3 className="card-title font-extrabold">
@@ -287,14 +287,7 @@ export default function Home() {
               </div>
 
               <div className="card">
-                <h3 className="card-title font-extrabold">
-                  <a
-                    target="_blank"
-                    href="https://www.instagram.com/ar/3142830929074581/"
-                  >
-                    Portal Face Beans
-                  </a>
-                </h3>
+                <h3 className="card-title font-extrabold">Portal Face Beans</h3>
                 <div className="card-description">
                   This face filter created for Meow Wolf features complex
                   shaders and real-time physics simulation. Users head movements
@@ -309,7 +302,7 @@ export default function Home() {
                 <h3 className="card-title font-extrabold">
                   <a
                     target="_blank"
-                    href="https://www.instagram.com/ar/3142830929074581/"
+                    href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=54847efd9f984f6fb1180a58c264c7e4&metadata=01"
                   >
                     Glassy
                   </a>
@@ -341,6 +334,18 @@ export default function Home() {
                   <img src="/reflect.gif" width="300" height="400" />
                 </div>
               </div>
+
+              {/* <div className="card">
+                <h3 className="card-title font-extrabold">Magic 8 Ball</h3>
+                <div className="card-description">
+                  This effect was created for the artist Future Fantasy Delight
+                  using his signature black & white style. Users can shake their
+                  head to get a new fortune.
+                </div>
+                <div className="card-images max-w-sm mx-auto">
+                  <img src="/8ball.gif" width="300" height="400" />
+                </div>
+              </div> */}
 
               <div className="card">
                 <h3 className="card-title font-extrabold">
