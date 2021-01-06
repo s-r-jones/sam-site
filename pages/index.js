@@ -282,13 +282,44 @@ export default function Home() {
                   times.
                 </div>
                 <div className="card-images max-w-sm mx-auto">
-                  <video
-                    preload="metadata"
-                    src="jelly_demo.mov"
-                    height="40"
-                    width="300"
-                    controls
-                  />
+                  <img src="/jelly_helmet.gif" width="300" height="400" />
+                </div>
+              </div>
+
+              <div className="card">
+                <h3 className="card-title font-extrabold">
+                  <a
+                    target="_blank"
+                    href="https://www.instagram.com/ar/3142830929074581/"
+                  >
+                    Portal Face Beans
+                  </a>
+                </h3>
+                <div className="card-description">
+                  This face filter created for Meow Wolf features complex
+                  shaders and real-time physics simulation. Users head movements
+                  control the velocity of the spheres in the users head!
+                </div>
+                <div className="card-images max-w-sm mx-auto">
+                  <img src="/face_portal.gif" width="300" height="400" />
+                </div>
+              </div>
+
+              <div className="card">
+                <h3 className="card-title font-extrabold">
+                  <a
+                    target="_blank"
+                    href="https://www.instagram.com/ar/3142830929074581/"
+                  >
+                    Glassy
+                  </a>
+                </h3>
+                <div className="card-description">
+                  A Lidar enabled Snapchat effect. Spawn cubes that reflect and
+                  distort your world.
+                </div>
+                <div className="card-images max-w-sm mx-auto">
+                  <img src="/glassy.gif" width="300" height="400" />
                 </div>
               </div>
 
@@ -307,13 +338,7 @@ export default function Home() {
                   waving rippling fragment shader
                 </div>
                 <div className="card-images max-w-sm mx-auto">
-                  <video
-                    preload="metadata"
-                    src="reflect_demo.mp4"
-                    height="40"
-                    width="300"
-                    controls
-                  />
+                  <img src="/reflect.gif" width="300" height="400" />
                 </div>
               </div>
 
@@ -332,13 +357,7 @@ export default function Home() {
                   This effect has been viewed more than 400,000 times.
                 </div>
                 <div className="card-images max-w-sm mx-auto">
-                  <video
-                    preload="metadata"
-                    src="vcr_demo.mov"
-                    height="40"
-                    width="300"
-                    controls
-                  />
+                  <img src="/vcr.gif" width="300" height="400" />
                 </div>
               </div>
               {/* End */}
