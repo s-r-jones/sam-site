@@ -347,7 +347,7 @@ export default function Home() {
                 </div>
                 <div className="card-images max-w-sm mx-auto">
                   <video
-                    src="reflect_demo.mov"
+                    src="reflect_demo.mp4"
                     controls
                     width="300"
                     height="400"
