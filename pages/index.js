@@ -50,7 +50,7 @@ export default function Home() {
       </div>
       {isReady() === false && (
         <div className="text-gray-600 font-extrabold absolute top-40 left-40 text-4xl p-4 bg-gray-100 ">
-          Tap and Move to Play! :)
+          Tap and Move to Play!
         </div>
       )}
       {activeTab !== null && (
@@ -265,7 +265,7 @@ export default function Home() {
           {activeTab === 0 && (
             <div className="card-list">
               <h3 className="ml-4 mt-2 underline text-lg font-extrabold">
-                Recent AR :)
+                Recent AR
               </h3>
               <div className="card">
                 <h3 className="card-title font-extrabold">
