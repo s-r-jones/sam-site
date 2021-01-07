@@ -282,7 +282,12 @@ export default function Home() {
                   times.
                 </div>
                 <div className="card-images max-w-sm mx-auto">
-                  <img src="/jelly_helmet.gif" width="300" height="400" />
+                  <video
+                    src="jelly_demo.mov"
+                    controls
+                    width="300"
+                    height="400"
+                  />
                 </div>
               </div>
 
@@ -294,7 +299,12 @@ export default function Home() {
                   control the velocity of the spheres in the users head!
                 </div>
                 <div className="card-images max-w-sm mx-auto">
-                  <img src="/face_portal.gif" width="300" height="400" />
+                  <video
+                    src="face_portal.mov"
+                    controls
+                    width="300"
+                    height="400"
+                  />
                 </div>
               </div>
 
@@ -312,7 +322,12 @@ export default function Home() {
                   distort your world.
                 </div>
                 <div className="card-images max-w-sm mx-auto">
-                  <img src="/glassy.gif" width="300" height="400" />
+                  <video
+                    src="glassy_demo.mov"
+                    controls
+                    width="300"
+                    height="400"
+                  />
                 </div>
               </div>
 
@@ -331,11 +346,16 @@ export default function Home() {
                   waving rippling fragment shader
                 </div>
                 <div className="card-images max-w-sm mx-auto">
-                  <img src="/reflect.gif" width="300" height="400" />
+                  <video
+                    src="reflect_demo.mov"
+                    controls
+                    width="300"
+                    height="400"
+                  />
                 </div>
               </div>
 
-              {/* <div className="card">
+              <div className="card">
                 <h3 className="card-title font-extrabold">Magic 8 Ball</h3>
                 <div className="card-description">
                   This effect was created for the artist Future Fantasy Delight
@@ -343,9 +363,9 @@ export default function Home() {
                   head to get a new fortune.
                 </div>
                 <div className="card-images max-w-sm mx-auto">
-                  <img src="/8ball.gif" width="300" height="400" />
+                  <video src="8ball.mov" controls width="300" height="400" />
                 </div>
-              </div> */}
+              </div>
 
               <div className="card">
                 <h3 className="card-title font-extrabold">
@@ -362,7 +382,7 @@ export default function Home() {
                   This effect has been viewed more than 400,000 times.
                 </div>
                 <div className="card-images max-w-sm mx-auto">
-                  <img src="/vcr.gif" width="300" height="400" />
+                  <video src="vcr_demo.mov" controls width="300" height="400" />
                 </div>
               </div>
               {/* End */}
