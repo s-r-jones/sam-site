@@ -300,7 +300,7 @@ export default function Home() {
                 </div>
                 <div className="card-images max-w-sm mx-auto">
                   <video
-                    src="face_portal.mov"
+                    src="face_portal.MOV"
                     controls
                     width="300"
                     height="400"
@@ -363,7 +363,7 @@ export default function Home() {
                   head to get a new fortune.
                 </div>
                 <div className="card-images max-w-sm mx-auto">
-                  <video src="8ball.mov" controls width="300" height="400" />
+                  <video src="8ball.MOV" controls width="300" height="400" />
                 </div>
               </div>
 
