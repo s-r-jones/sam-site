@@ -218,7 +218,6 @@ var fluid = (function () {
 
   return {
     init: function (name, w, h) {
-      console.log(name);
       particles = [];
       grid = [];
       close = [];
